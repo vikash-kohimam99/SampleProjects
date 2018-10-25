@@ -12,7 +12,7 @@ import javax.persistence.TemporalType;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-
+import org.springframework.data.annotation.LastModifiedDate;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @MappedSuperclass
@@ -29,8 +29,8 @@ public class AuditModel implements Serializable{
 	@CreatedDate
 	private Date createdAt;
 	@Temporal(TemporalType.TIMESTAMP)
-	@Column(name="updated_at",nullable=false, updatable=false)
-	@CreatedDate
+	@Column(name="updated_at",nullable=false)
+	@LastModifiedDate
 	private Date updatedAt;
 	public Date getCreatedAt() {
 		return createdAt;
