@@ -1,2 +1,0 @@
-# SampleProjects
-Sample Projects POC
