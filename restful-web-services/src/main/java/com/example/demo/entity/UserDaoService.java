@@ -49,9 +49,10 @@ public class UserDaoService {
 		Iterator<User> itr = users.iterator();
 		while(itr.hasNext()) {
 			User user = itr.next();
-			if(id==user.getId())
+			if(user.getId()==id) {
 				itr.remove();
 			return user;
+		}
 		}
 		return null;
 		
