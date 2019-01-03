@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Implementation-Title: restful-web-services
 Implementation-Version: 0.0.1-SNAPSHOT
-Built-By: VK5045232
+Built-By: Vikash Kumar
 Implementation-Vendor-Id: com.example
-Build-Jdk: 1.8.0_60
+Build-Jdk: 1.8.0_161
 Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
  ot-starter-parent/restful-web-services
 Created-By: Maven Integration for Eclipse

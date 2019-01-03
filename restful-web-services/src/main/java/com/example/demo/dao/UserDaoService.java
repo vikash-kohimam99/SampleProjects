@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.example.demo.dao;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -6,6 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 
 import org.springframework.stereotype.Component;
+
+import com.example.demo.entity.User;
 
 @Component
 public class UserDaoService {

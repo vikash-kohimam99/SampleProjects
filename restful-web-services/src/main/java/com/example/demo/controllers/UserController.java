@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.example.demo.dao.UserDaoService;
 import com.example.demo.entity.User;
-import com.example.demo.entity.UserDaoService;
 import com.example.demo.exceptions.UserNotFoundException;
 
 @RestController

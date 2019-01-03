@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.example.demo.dao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +6,8 @@ import java.util.Random;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+
+import com.example.demo.entity.UserPost;
 
 @Component
 public class UserPostDaoService {
