@@ -1,5 +1,8 @@
 package com.example.demo.entity;
 
+import io.swagger.annotations.ApiModel;
+
+@ApiModel("This Contains all the posts from the users")
 public class UserPost  {
 
 	private Integer postId;
