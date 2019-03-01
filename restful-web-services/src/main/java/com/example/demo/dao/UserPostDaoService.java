@@ -1,4 +1,4 @@
-package com.example.demo.dao;
+/*package com.example.demo.dao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -53,3 +53,4 @@ public class UserPostDaoService {
 	
 	
 }
+*/

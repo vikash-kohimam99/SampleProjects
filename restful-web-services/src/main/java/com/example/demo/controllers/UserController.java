@@ -16,14 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.example.demo.entity.User;
-import com.example.demo.entity.UserDaoService;
 import com.example.demo.exceptions.UserNotFoundException;
 
 @RestController
 public class UserController {
 
 	@Autowired
-	private UserDaoService userDaoService;
+	private com.example.demo.dao.UserDaoService userDaoService;
 	
 	@GetMapping(value="/users")
 	public List<User> allUsers() {
