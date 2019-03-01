@@ -1,22 +1,27 @@
 package com.example.demo.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import io.swagger.annotations.ApiModel;
 
 @ApiModel("This Contains all the posts from the users")
+@Entity
 public class UserPost  {
 
+	@Id
+	@GeneratedValue
 	private Integer postId;
-	private String post;
-	private Integer userId;
+	private String description;
 	
-	
-	
-	public UserPost(Integer postId, String post, Integer userId) {
-		super();
-		this.postId = postId;
-		this.post = post;
-		this.userId = userId;
-	}
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JsonIgnore
+	private User user;
 	
 	
 	public Integer getPostId() {
@@ -25,23 +30,24 @@ public class UserPost  {
 	public void setPostId(Integer postId) {
 		this.postId = postId;
 	}
-	public String getPost() {
-		return post;
+	public String getDescription() {
+		return description;
 	}
-	public void setPost(String post) {
-		this.post = post;
+	public void setDescription(String description) {
+		this.description = description;
 	}
-	public Integer getUserId() {
-		return userId;
+	public User getUser() {
+		return user;
 	}
-	public void setUserId(Integer userId) {
-		this.userId = userId;
+	public void setUser(User user) {
+		this.user = user;
 	}
 	
 	
 	
 	
-
+	
+	
 
 	
 }
